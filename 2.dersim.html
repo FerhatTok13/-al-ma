@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en-TR">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="2.dersim.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script>
+	$(function(){
+  $(".link").click(function(){
+		var sayfa=$(this).attr('href');
+		$('html,body').animate({
+		 scrollTop:$(sayfa).offset().top},1000);
+		 });
+	  });
+	  </script>
+</head>
+<body>
+<nav class="menu">
+    <a class="link" href="#s1">Anasayfa</a>
+    <a class="link" href="#s2">Biz kimiz</a>
+    <a class="link" href="#s3">Vizyon</a>
+    <a class="link" href="#s4">Misyon</a>
+    <a class="link" href="#s5">İletişim</a>
+</nav>
+  <div id="s1" class="sayfa">
+
+   <div class="filtre">
+  </div>
+
+  </div>
+	<div id="s2" class="sayfa">
+	<div class="filtre">
+  </div>
+	</div>
+	<div id="s3" class="sayfa">
+
+    <div class="filtre">
+  </div>
+    <div id="s4" class="sayfa">
+
+    <div class="filtre">
+  </div>
+    <div id="s5" class="sayfa">
+
+    <div class="filtre">
+  </div>
+  <div class="alt">
+  FERHAT TOK
+  </div>
+</body>
+</html>
